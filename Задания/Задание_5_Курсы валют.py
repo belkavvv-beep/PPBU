@@ -43,7 +43,7 @@ def exchange():
 
 currencies = {
     'EUR': 'Евро',
-    'USD': 'Доллар США',
+    'USD': 'Американский доллар',
     'JPY': 'Японская йена',
     'GBP': 'Фунт стерлингов',
     'AUD': 'Австралийский доллар',
@@ -57,8 +57,8 @@ currencies = {
 }
 
 root = Tk()
-root.title('Курс обмена валют USD')
-root.geometry('360x180')
+root.title('Курсы обмена валют')
+root.geometry('300x360')
 
 Label(root, text='Базовая валюта').pack()
 base_combobox = ttk.Combobox(root, values=list(currencies.keys()))
@@ -76,7 +76,7 @@ target_label = ttk.Label()
 target_label.pack()
 
 
-Button(text='Получить курс обмена к доллару',
+Button(text='Получить курс обмена',
        command=exchange).pack(pady=10, padx=10)
 
 
