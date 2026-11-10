@@ -2,6 +2,17 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from datetime import datetime
 
+coins = {
+    "Bitcoin (BTC)": "bitcoin",
+    "Ethereum (ETH)": "ethereum",
+    "Binance Coin (BNB)": "binancecoin",
+    "Solana (SOL)": "solana",
+    "Ripple (XRP)": "ripple",
+    "Cardano (ADA)": "cardano",
+    "Dogecoin (DOGE)": "dogecoin"
+}
+
+
 root = tk.Tk()
 root.title("Курсы криптовалют")
 root.geometry("450x320")
